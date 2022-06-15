@@ -14,11 +14,9 @@ class LopController
     }
     public function store()
     {
-        $ho = $_POST['ho'];
-        $ten = $_POST['ten'];
 
         require 'model/Lop.php';
-        (new Lop())->create($ho, $ten);
+        (new Lop())->create($_POST);
     }
     public function edit()
     {
@@ -29,12 +27,9 @@ class LopController
     }
     public function update()
     {
-        $ma = $_POST['ma'];
-        $ho = $_POST['ho'];
-        $ten = $_POST['ten'];
 
         require 'model/Lop.php';
-        (new Lop())->update($ma, $ho, $ten);
+        (new Lop())->update($_POST);
     }
     public function delete()
     {

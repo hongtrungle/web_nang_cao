@@ -11,15 +11,15 @@
             </tr>
             <?php foreach ($arr as $each){ ?>
                     <tr>
-                        <td><?php echo $each->get_ma() ?></td>
+                        <td><?php echo $each->show_ma() ?></td>
                         <td><?php echo $each->get_ho_ten() ?></td>
                         <td>
-                            <a href="?action=edit&ma=<?php echo $each->show_ma() ?>">
+                            <a href="?action=edit&ma=<?php echo $each->get_ma() ?>">
                                 Sửa
                             </a>
                         </td>
                         <td>
-                            <a href="?action=delete&ma=<?php echo $each->show_ma() ?>">
+                            <a href="?action=delete&ma=<?php echo $each->get_ma() ?>">
                                 Xóa
                             </a>
                         </td>

@@ -1,5 +1,5 @@
 <form action="?action=update" method="post">
-    <input type="hidden" name="ma" value="<?php echo $each->show_ma() ?>">
+    <input type="hidden" name="ma" value="<?php echo $each->get_ma() ?>">
     Họ
     <input type="text" name="ho" value="<?php echo $each->get_ho() ?>">
     <br>
