@@ -1,4 +1,4 @@
-<form action="?action=update" method="post">
+<form action="?action=update&controller=lop" method="post">
     <input type="hidden" name="ma" value="<?php echo $each->get_ma() ?>">
     Họ
     <input type="text" name="ho" value="<?php echo $each->get_ho() ?>">

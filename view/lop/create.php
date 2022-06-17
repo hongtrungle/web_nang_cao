@@ -1,4 +1,4 @@
-<form action="?action=store" method="post">
+<form action="?action=store&controller=lop" method="post">
     Họ
     <input type="text" name="ho">
     <br>

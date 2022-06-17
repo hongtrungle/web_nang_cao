@@ -17,6 +17,7 @@ class LopController
 
         require 'model/Lop.php';
         (new Lop())->create($_POST);
+        header('location: index.php?controller=lop');
     }
     public function edit()
     {
@@ -30,6 +31,7 @@ class LopController
 
         require 'model/Lop.php';
         (new Lop())->update($_POST);
+        header('location: index.php?controller=lop');
     }
     public function delete()
     {
@@ -37,5 +39,6 @@ class LopController
 
         require 'model/Lop.php';
         (new Lop())->destroy($ma);
+        header('location: index.php?controller=lop');
     }
 }
